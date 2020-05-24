@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital@0;1&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/loading.css" rel="stylesheet">
+    <link href="css/gallery.css" rel="stylesheet">
+    <link href="css/mobile.css" rel="stylesheet">
+
+    <!-- Meta data -->
+    <meta name="keywords" content="micro site, spaceX, celinehavn.no, school-projec"/>
+    <meta name="description" content="A micro site about spaceX"/>
+    <meta name="revisit-after" content="7 days"/>
+
+    <meta name="language" content="english"/>
+
+    <!-- Facebook Meta info -->
+    <meta property="og:title" content="Micro site about SpaceX"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="/img/Screenshot%202020-05-22%20at%2017.39.42.png" />
+    <meta property="og:image:secure_url" content="/img/starship.png" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:description" content="A micro site about SpaceX"/>
+
+    <!-- Twitter Meta info -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="http://celinehavn.no">
+    <meta name="twitter:title" content="Micro site about SpaceX">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="/img/Screenshot%202020-05-22%20at%2017.39.58.png">
+    <meta name="author" content="Celine">
+
+
+    <meta name="msapplication-navbutton-color" content="##012a45">
+    <meta name="theme-color" content="#012a45">
+    <meta name="msapplication-TileColor" content="#012a45">
+    <title>SpaceX</title>
+</head>
+<body>
+<div id="loading_page">
+    <div class="ring"></div>
+</div>
+
+    <header>
+        <div class="header-container">
+
+            <div class="logo">
+                <a href="#"><img src="img/spacex_logo.svg" alt="Spacex logo"></a>
+            </div>
+
+            <div id="mobile_menu" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="close_menu()">&times;</a>
+                <div class="overlay-content">
+                    <a href="#" id="home_mobile">HOME</a>
+                    <a href="#" id="gallery_mobile">GALLERY</a>
+                    <a href="#" id="about_mobile">ABOUT</a>
+                    <a href="#" id="contact_mobile">CONTACT</a>
+                </div>
+            </div>
+
+            <div class="menu">
+                <span style="font-size:30px;cursor:pointer;color: #f2f2f2" onclick="open_menu()" id="hamuger_menu">&#9776;</span>
+                <ul id="navigation">
+                    <li><a href="#" id="home-link" class="active">HOME</a></li>
+                    <li><a href="#" id="gallery-link">GALLERY</a></li>
+                    <li><a href="#" id="about-link">ABOUT</a></li>
+                    <li><a href="#" id="contact-link">CONTACT</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+
+<div id="main">
+    <div class="page-countdown">
+        <h1 id="welcome_message_mobile">Welcome back</h1>
+        <div id="mobile_countdown">
+            <p id="display">Time to next launch</p>
+            <p id="time">52d:20h:25s</p>
+        </div>
+
+        <div>
+            <button class="btn" onclick="latest_launches()">Previous</button>
+            <button class="btn" onclick="next_launches()">Next</button>
+        </div>
+
+    </div>
+        <p id="downarrow">
+            <img src="downarrow.svg" alt="Down arrow">
+        </p>
+        <div id="wrapper">
+
+            <!-- Home page -->
+            <section id="home">
+                <div id="ship-section">
+
+                    <div class="ship center" itemscope>
+                        <img src="img/falken9.png" class="ship-img" alt="Spacex - image of Falcon 9">
+                        <div class="ship-info">
+                            <h3>FALCON 9</h3>
+                            <p class="left">Falcon 9 is a reusable, two-stage rocket designed and manufactured by SpaceX for the
+                                reliable and safe transport of people and payloads into Earth orbit and beyond. Falcon 9
+                                is the world’s first orbital class reusable rocket.
+                                Reusability allows SpaceX to refly the most expensive parts of the rocket, which in turn
+                                drives down the cost of space access.</p>
+                        </div>
+                    </div>
+
+                    <div class="ship center" itemscope>
+                        <img src="img/falcon-heavy-render.png" class="ship-img" alt="Spacex - image of falcon Heavy">
+                        <div class="ship-info">
+                            <h3>FALCON HEAVY</h3>
+                            <p>Falcon Heavy is the most powerful operational rocket in the world by a factor of two.
+                                With the ability to lift into orbit nearly 64 metric tons (141,000 lb)
+                                Falcon Heavy can lift more than twice the payload of the next closest operational
+                                vehicle, the Delta IV Heavy.
+                                </p>
+                        </div>
+                    </div>
+
+                    <div class="ship center" itemscope>
+                        <img src="img/dragon_tr.png" class="ship-img" alt="Spacex - image of Dragon">
+                        <div class="ship-info">
+                            <h3>DRAGON</h3>
+                            <p class="left">The Dragon spacecraft is capable of carrying up to 7 passengers to and from Earth orbit,
+                                and beyond.
+                                It is the only spacecraft currently flying that is capable of returning significant
+                                amounts of cargo to Earth, and will soon become the first private spacecraft to take
+                                humans to the space station.</p>
+                        </div>
+                    </div>
+
+                    <div class="ship center" itemscope>
+                        <img src="img/starship.png" class="ship-img" alt="Spacex - image of Starship">
+                        <div class="ship-info">
+                            <h3>STARSHIP</h3>
+                            <p class="left">SpaceX’s Starship spacecraft and Super Heavy rocket (collectively referred to as
+                                Starship) represent a fully reusable
+                                transportation system designed to carry both crew and cargo to Earth orbit, the Moon,
+                                Mars and beyond.
+                                Starship will be the world’s most powerful launch vehicle ever developed, with the
+                                ability to carry in excess of 100 metric tonnes to Earth orbit.</p>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- end of home page -->
+
+            <!-- About page -->
+            <section id="about">
+                <div class="pagecoainter">
+                    <h3 class="header-title">ABOUT</h3>
+                    <p>
+                        I’ve created a microsite for a company called SpaceX. My purpose for this site is a more
+                        fundamental
+                        understanding of space technology.
+                        For people like me, with little knowledge about space technology, it doesn’t necessarily mean
+                        that
+                        we’re not interested in space stuff. I could be someone that has seen Star Wars, Star Trek,
+                        Alien,
+                        and other science fiction movies, so I could be interested to know more about why we shoot up
+                        rockets into space.
+                        Have you heard of Tesla? Elon Musk?
+                        SpaceX was founded in 2002 by Elon Musk to enable people to live on other planets, for example,
+                        Mars.
+                    </p>
+
+                    <p>
+                        <picture>
+                            <img src="img/space.jpg" class="fullwidth" alt="Illustration image of life on mars">
+                        </picture>
+                    </p>
+                    <p>
+                        <a class="btn" href="https://www.spacex.com/">Fint out more</a>
+                    </p>
+
+                    <p>
+                        How rich must you be to travel to Mars?
+                        His goal is also to reduce the costs of transportation. What it const today is hard to say. For
+                        the
+                        time being, let’s explore the rockets that have succeeded in the space, wherein space and the
+                        purpose of it.
+                    </p>
+                </div>
+            </section>
+            <!-- end of about page -->
+
+            <!-- Gallery page -->
+            <section id="gallery">
+
+                <div class="pagecoainter" style="display: inline-block;padding: 0;width: 100%;">
+                    <h3 class="header-title">Gallery</h3>
+                    <div id="images">
+
+                        <div class="gallery">
+                            <a target="_blank" href="#">
+                                <img src="img/Screenshot%202020-05-22%20at%2017.39.58.png" alt="Cinque Terre" width="600" height="400">
+                            </a>
+                            <div class="desc">Happy Earth!</div>
+                        </div>
+
+
+                        <div class="gallery">
+                            <a target="_blank" href="https://www.instagram.com/p/B_SQdvGlXCJ/">
+                                <img src="img/Screenshot%202020-05-22%20at%2017.39.09.png" alt="Forest" width="600" height="400">
+                            </a>
+                            <div class="desc">#MayTheFourthBeWithYou</div>
+                        </div>
+
+                        <div class="gallery">
+                            <a target="_blank" href="https://www.instagram.com/p/B_nPifJlmYK/">
+                                <img src="img/Screenshot%202020-05-22%20at%2017.39.42.png" alt="Northern Lights" width="600" height="400">
+                            </a>
+                            <div class="desc">SpaceX has been selected to..</div>
+                        </div>
+
+                        <div class="gallery">
+                            <a target="_blank" href="#">
+                                <img src="img/Screenshot%202020-05-22%20at%2017.42.26.png" alt="A planet" width="600" height="400">
+                            </a>
+                            <div class="desc">Out in the space</div>
+                        </div>
+
+                        <div class="gallery">
+                            <a target="_blank" href="https://www.instagram.com/p/B_TM4Dglk-W">
+                                <img src="img/Screenshot%202020-05-22%20at%2017.40.14.png" alt="Mountains" width="600" height="400">
+                            </a>
+                            <div class="desc">Hey guys...</div>
+                        </div>
+
+                        <div class="gallery">
+                            <a target="_blank" href="#">
+                                <img src="img/Screenshot%202020-05-22%20at%2017.42.55.png" alt="Mountains" width="600" height="400">
+                            </a>
+                            <div class="desc">Latest missions..</div>
+                        </div>
+
+                        <div class="gallery">
+                            <a target="_blank" href="#">
+                                <img src="img/out_in_space.png" alt="Out in space" width="600" height="400">
+                            </a>
+                            <div class="desc">Latest missions..</div>
+                        </div>
+
+                        <div class="gallery">
+                            <a target="_blank" href="#">
+                                <img src="img/in_a_ship.png" alt="In a ship" width="600" height="400">
+                            </a>
+                            <div class="desc">Latest missions..</div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- End of gallery page -->
+
+            <!-- Contact page -->
+            <section id="contact">
+                <div class="pagecoainter">
+                    <h3 class="header-title">CONTACT</h3>
+                    <form id="contact_form" action="index.html" onsubmit="return contactForm(this);">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name..">
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email address..">
+
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Enter your message here.." name="message"></textarea>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </section>
+            <!-- End of contact page -->
+
+            <!-- Footer -->
+            <footer>
+                <p class="footer-text">SCHOOL PROJECT @ 2020</p>
+            </footer>
+        </div>
+</div>
+    <!-- Loading javascript -->
+    <script src="js/script.js"></script>
+    <script src="js/form_validation.js"></script>
+</body>
+</html>

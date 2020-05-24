@@ -1,0 +1,44 @@
+.page-countdown{
+    margin: 70px auto 59px !important;
+}
+section {
+    background: #9b9b9bed !important;
+    max-width: 794px !important;
+    margin: 0 auto;
+    padding: 72px;
+    height: auto;
+}
+
+.header-title{
+    font-weight: lighter;
+    color: #FFFFFF;
+    text-align: center;
+}
+.pagecoainter {
+    color: #f2f2f2;
+    border-radius: 5px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #005288;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #005288;
+}
